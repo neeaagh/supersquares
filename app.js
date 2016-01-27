@@ -1,1 +1,1 @@
-// app.js
+var app = angular.module('superSquaresApp', ['ngMaterial']);

@@ -6,8 +6,37 @@
   <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vel animi quas ex totam, dolores ipsum minus laborum, corrupti sint consequuntur, distinctio impedit at voluptates, quod et facere veniam ullam?</p>
+<body ng-app="superSquaresApp" layout="column">
+
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2><span>SuperSquares</span></h2>
+    </div>
+  </md-toolbar>
+
+  <div flex layout="row">
+    <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
+      <md-list>
+
+        <md-list-item ng-click="javascript;">
+          <p>Dasboard</p>
+        </md-list-item>
+
+        <md-list-item ng-click="javascript;">
+          <p>Settings</p>
+        </md-list-item>
+
+      </md-list>
+    </md-sidenav>
+
+    <md-content flex id="content">
+
+      <h2>Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla commodi, molestiae nostrum tempore odit veniam quod laudantium. Dolorem sequi neque voluptatem quia nesciunt dolor pariatur praesentium velit delectus dicta.
+      </p>
+    </md-content>
+  </div>
 
   <script src="node_modules/angular/angular.js"></script>
   <script src="node_modules/angular-ui-router/build/angular-ui-router.js"></script>
